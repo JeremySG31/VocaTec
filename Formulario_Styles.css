@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* Estilo general del cuerpo */
+/* Estilo general */
 body {
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(135deg, #f4f4f4, #e0e0e0); /* Fondo degradado */
