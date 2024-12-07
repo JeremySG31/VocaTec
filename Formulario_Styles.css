@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+/* Reset de márgenes y padding para todo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0); /* Fondo degradado */
+    background-size: 400% 400%; /* Tamaño del fondo para animación */
+    animation: gradientAnimation 15s ease infinite; /* Animación del fondo */
+    color: #333; /* Color de texto oscuro */
+    line-height: 1.6;
+    padding: 40px;
+    position: relative;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    color: #007bff; /* Color azul claro para el título */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* Introducción */
+.intro {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo del formulario */
+form {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo de los fieldset */
+fieldset {
+    border: 2px solid #007bff; /* Borde azul claro */
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Fondo ligeramente gris */
+}
+
+/* Legend */
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+/* Labels y radio buttons */
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #007bff; /* Color moderno para los radio buttons */
+}
+
+/* Botón de calcular */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff; /* Azul claro */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    transform: translateY(-3px); /* Efecto flotante */
+}
+
+/* Estilo del mensaje de éxito */
+#success-message {
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Texto verde oscuro */
+    padding: 15px;
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 1.2rem;
+    margin-top: 20px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    opacity: 0;
+    animation: fadeInOut 3s forwards; /* Animación de aparición */
+}
+
+/* Animación para mostrar y ocultar el mensaje */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Resultados */
+#resultado {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Añadir un efecto de desvanecimiento al fondo de la página */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05; /* Efecto de desvanecimiento muy ligero */
+    z-index: -1;
+}
+
+/* Estilo para el contenedor de resultados */
+#resultado {
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Estilo del título de la recomendación */
+#resultado h3 {
+    font-size: 2rem;
+    color: #007bff; /* Color azul claro para el título */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: none; /* Sin sombra para un estilo más limpio */
+}
+
+/* Estilo de la descripción */
+#resultado p {
+    font-size: 1.1rem;
+    color: #555; /* Texto gris oscuro */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la lista de puntuaciones */
+#resultado ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Estilo de cada ítem de la lista */
+#resultado ul li {
+    margin-bottom: 12px;
+    background-color: #17b5f97b; /* Fondo ligeramente gris */
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón por encima de los ítems */
+#resultado ul li:hover {
+    background-color: rgba(66, 151, 241, 0.751); /* Azul claro al pasar el ratón */
+}
+
+/* Estilo de los valores */
+#resultado ul li span {
+    font-weight: bold;
+    color: #0c17eacf; /* Color azul claro para los valores */
+}
+
+.regresar-btn {
+    padding: 5px 10px;  /* Reducido para hacerlo más pequeño */
+    background-color: #4CAF50;  /* Color de fondo */
+    color: white;  /* Color del texto */
+    border: none;  /* Sin borde */
+    border-radius: 5px;  /* Bordes redondeados */
+    cursor: pointer;  /* Cursor de mano */
+    font-size: 10px;  /* Fuente más pequeña */
+    width: 70px;  /* Ancho más reducido */
+    height: 25px;  /* Alto más reducido */
+    text-align: center;  /* Alineación del texto */
+    display: inline-block; /* Asegura que el botón tenga el tamaño justo */
+}
+
+/* Efecto hover */
+.regresar-btn:hover {
+    background-color: #45a049;  /* Color de fondo al pasar el mouse */
+}
