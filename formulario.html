@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Vocacional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formulario_styles.css">
+    
+<header class="form-header">
+    <div class="header-content">
+        <h1>Formulario de Test Vocacional en Informática</h1>
+        <p>Descubre tu Futuro en el Mundo de la Tecnología</p>
+    </div>
+</header>
+
+    <main>
+        <p class="intro">
+            Contesta cada pregunta eligiendo la opción que mejor refleje tus intereses y preferencias. 
+            ¡No te preocupes si no tienes experiencia en informática! Las preguntas están diseñadas para ayudarte a descubrir qué áreas podrían gustarte. 
+            Tómate tu tiempo y sé honesto por favor.
+        </p>
+
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>1. ¿Te gusta resolver problemas o encontrar soluciones creativas para mejorar una situación?</legend>
+                <label><input type="radio" name="q1" value="a"> Sí, disfruto mucho resolviendo problemas.</label><br>
+                <label><input type="radio" name="q1" value="b"> Solo si involucra analizar datos o patrones.</label><br>
+                <label><input type="radio" name="q1" value="c"> Prefiero buscar soluciones en equipo.</label><br>
+                <label><input type="radio" name="q1" value="d"> Me gusta diseñar y crear algo único.</label><br>
+                <label><input type="radio" name="q1" value="e"> Sí, siempre me interesa cómo hacer las cosas más seguras.</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. ¿Te interesan los datos y cómo se pueden utilizar para tomar decisiones?</legend>
+                <label><input type="radio" name="q2" value="a"> Mucho, me encantaría aprender más.</label><br>
+                <label><input type="radio" name="q2" value="b"> Un poco, pero prefiero otro tipo de tareas.</label><br>
+                <label><input type="radio" name="q2" value="c"> No estoy seguro, pero podría ser interesante.</label><br>
+                <label><input type="radio" name="q2" value="d"> Prefiero trabajar en otros aspectos como gráficos o diseño.</label><br>
+                <label><input type="radio" name="q2" value="e"> Sí, siempre y cuando esté relacionado con la protección de información.</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. ¿Qué tanto te interesan los videojuegos?</legend>
+                <label><input type="radio" name="q3" value="a"> Me encantan y me gustaría saber cómo se crean.</label><br>
+                <label><input type="radio" name="q3" value="b"> Un poco, pero prefiero otro tipo de tareas.</label><br>
+                <label><input type="radio" name="q3" value="c"> Solo como pasatiempo, pero no para trabajar en eso.</label><br>
+                <label><input type="radio" name="q3" value="d"> Prefiero algo más serio, como aplicaciones empresariales.</label><br>
+                <label><input type="radio" name="q3" value="e"> Me interesa su diseño y creatividad.</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. ¿Te atrae la idea de trabajar con algoritmos y matemáticas?</legend>
+                <label><input type="radio" name="q4" value="a"> Sí, me parece fascinante.</label><br>
+                <label><input type="radio" name="q4" value="b"> Un poco, especialmente si ayuda a tomar decisiones.</label><br>
+                <label><input type="radio" name="q4" value="c"> Solo si está relacionado con algún proyecto práctico.</label><br>
+                <label><input type="radio" name="q4" value="d"> No mucho, prefiero algo más visual o creativo.</label><br>
+                <label><input type="radio" name="q4" value="e"> Sí, especialmente si se aplica a la seguridad.</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. ¿Te gusta trabajar en equipo o prefieres resolver problemas por tu cuenta?</legend>
+                <label><input type="radio" name="q5" value="a"> Disfruto resolver problemas solo.</label><br>
+                <label><input type="radio" name="q5" value="b"> Me gustaría analizar datos con un equipo de expertos.</label><br>
+                <label><input type="radio" name="q5" value="c"> Prefiero colaborar en equipo para alcanzar un objetivo común.</label><br>
+                <label><input type="radio" name="q5" value="d"> Me gusta colaborar en proyectos creativos.</label><br>
+                <label><input type="radio" name="q5" value="e"> Ambos, dependiendo del tipo de tarea.</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>6. ¿Te gustaría diseñar aplicaciones o sistemas que faciliten tareas en empresas o para otras personas?</legend>
+                <label><input type="radio" name="q6" value="a"> Sí, especialmente aplicaciones prácticas y útiles.</label><br>
+                <label><input type="radio" name="q6" value="b"> Me gustaría que se enfoquen en analizar datos y estadísticas.</label><br>
+                <label><input type="radio" name="q6" value="c"> Definitivamente, me interesa mucho el diseño de sistemas.</label><br>
+                <label><input type="radio" name="q6" value="d"> Solo si el proyecto tiene un componente visual importante.</label><br>
+                <label><input type="radio" name="q6" value="e"> Sí, especialmente si puedo aplicar medidas de seguridad.</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>7. ¿Cómo te sentirías diseñando un programa o aplicación desde cero?</legend>
+                <label><input type="radio" name="q7" value="a"> Motivado, me gusta crear soluciones tecnológicas.</label><br>
+                <label><input type="radio" name="q7" value="b"> Solo si involucra trabajar con datos o estadísticas.</label><br>
+                <label><input type="radio" name="q7" value="c"> Me gustaría más la planificación y organización de sistemas.</label><br>
+                <label><input type="radio" name="q7" value="d"> Prefiero algo más creativo, como el diseño visual.</label><br>
+                <label><input type="radio" name="q7" value="e"> Interesado, especialmente si tiene medidas de seguridad.</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>8. ¿Te gustaría proteger sistemas y datos de posibles amenazas o ataques?</legend>
+                <label><input type="radio" name="q8" value="a"> Prefiero otras áreas, pero suena interesante.</label><br>
+                <label><input type="radio" name="q8" value="b"> Solo si se relaciona con la protección de datos personales.</label><br>
+                <label><input type="radio" name="q8" value="c"> Prefiero diseñar sistemas y procesos.</label><br>
+                <label><input type="radio" name="q8" value="d"> No es mi prioridad, prefiero el diseño y la creatividad.</label><br>
+                <label><input type="radio" name="q8" value="e"> ¡Sí, la seguridad es muy importante para mí!</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>9. ¿Qué tan importante es para ti la creatividad en tu futuro trabajo?</legend>
+                <label><input type="radio" name="q9" value="a"> Un poco, prefiero resolver problemas.</label><br>
+                <label><input type="radio" name="q9" value="b"> No mucho, prefiero un enfoque analítico.</label><br>
+                <label><input type="radio" name="q9" value="c"> Depende del tipo de proyecto.</label><br>
+                <label><input type="radio" name="q9" value="d"> Muy importante, me encanta ser creativo.</label><br>
+                <label><input type="radio" name="q9" value="e"> Prefiero trabajar en la seguridad y protección.</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>10. ¿Qué tan importante es para ti trabajar con tecnologías emergentes como inteligencia artificial o aprendizaje automático (machine learning)?</legend>
+                <label><input type="radio" name="q10" value="a"> Me parece interesante y me gustaría aprender cómo se aplican en diferentes áreas.</label><br>
+                <label><input type="radio" name="q10" value="b"> Solo si están relacionadas con datos y análisis.</label><br>
+                <label><input type="radio" name="q10" value="c"> No me interesa mucho, prefiero trabajar en otros campos.</label><br>
+                <label><input type="radio" name="q10" value="d"> Prefiero enfocarme en la seguridad o el diseño.</label><br>
+                <label><input type="radio" name="q10" value="e"> Me encanta la idea de trabajar con estas tecnologías.</label><br>
+            </fieldset>
+
+            <button type="button" id="calcular-btn">Calcular</button>
+        </form>
+
+        <div id="success-message" style="display: none; color: green;">
+            ¡Cálculo completado con éxito!
+        </div>
+        <div id="resultado" style="font-size: 1.2rem; color: #f8f8f8; margin-top: 20px;"></div>
+    </main>
+
+    <script src="formulario_scripts.js"></script> <!-- Asegúrate de que este archivo esté vinculado correctamente -->
+</body>
+</html>

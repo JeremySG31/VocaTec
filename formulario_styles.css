@@ -1,0 +1,243 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0); 
+    background-size: 400% 400%; 
+    animation: gradientAnimation 15s ease infinite; 
+    color: #333; 
+    line-height: 1.6;
+    padding: 40px;
+    position: relative;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    color: #007bff; 
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+
+.intro {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+form {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+fieldset {
+    border: 2px solid #007bff; 
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+}
+
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #007bff; 
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-3px); 
+}
+
+
+#success-message {
+    background-color: #d4edda;
+    color: #155724; 
+    padding: 15px;
+    border-radius: 8px; 
+    font-size: 1.2rem;
+    margin-top: 20px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    opacity: 0;
+    animation: fadeInOut 3s forwards; 
+}
+
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#resultado {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05; 
+    z-index: -1;
+}
+
+
+#resultado {
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+#resultado h3 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: none; 
+}
+
+
+#resultado p {
+    font-size: 1.1rem;
+    color: #555; 
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+#resultado ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+#resultado ul li {
+    margin-bottom: 12px;
+    background-color: #17b5f97b; 
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+
+#resultado ul li:hover {
+    background-color: rgba(66, 151, 241, 0.751); 
+}
+
+
+#resultado ul li span {
+    font-weight: bold;
+    color: #0c17eacf; 
+}
+
+.regresar-btn {
+    padding: 5px 10px;  
+    background-color: #4CAF50;  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    font-size: 10px;  
+    width: 70px; 
+    height: 25px;  
+    text-align: center;  
+    display: inline-block; 
+}
+
+
+.regresar-btn:hover {
+    background-color: #45a049;  
+}
